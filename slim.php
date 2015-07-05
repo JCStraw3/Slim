@@ -7,8 +7,8 @@ $app = new \Slim\Slim(array(
 	'view' => new myView()
 ));
 
-$app->get('/hello', function() use ($app){
-	$app->render('view.php', array());
+$app->get('/', function() use ($app){
+	$app->render('gtryhrtger', array());
 });
 
 $app->run();
