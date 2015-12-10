@@ -1,14 +1,11 @@
 <?php
 
 require 'vendor/autoload.php';
-require 'vendor/slim/slim/Slim/myview.php';
 
-$app = new \Slim\Slim(array(
-	'view' => new myView()
-));
+$app = new \Slim\Slim();
 
-$app->get('/', function() use ($app){
-	$app->render('gtryhrtger', array());
+$app->get('/', function(){
+	alert('test');
 });
 
 $app->run();
